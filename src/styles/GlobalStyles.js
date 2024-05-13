@@ -43,7 +43,7 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
         margin: 0;
     }
-
+    
     html {
         font-size: 62.5%; /* Set the base font size to 10px */
     }

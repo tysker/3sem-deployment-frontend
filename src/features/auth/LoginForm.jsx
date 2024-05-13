@@ -69,6 +69,7 @@ function LoginForm({isAuthenticated, setIsAuthenticated, setUser, isLoading, err
     const [username, setUsername] = useState("stevejobs");
     const [password, setPassword] = useState("stevejobs123");
 
+    // const {isLoading, error}= user;
     const navigate = useNavigate();
 
     const handleSubmit = async (e) => {

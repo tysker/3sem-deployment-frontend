@@ -19,10 +19,7 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route element={
-                    <ProtectedRoute isAuthenticated={isAuthenticated}>
-                        <AppLayout setIsAuthenticated={setIsAuthenticated} roles={user.user.roles}/>
-                    </ProtectedRoute>}>
+                <Route element={<ProtectedRoute isAuthenticated={isAuthenticated}><AppLayout setIsAuthenticated={setIsAuthenticated} roles={user.user.roles}/></ProtectedRoute>}>
                     <Route index element={<Navigate to="home"/>}/>
                     <Route path="home" element={<Home/>}/>
                     <Route path="about" element={<About/>}/>
