@@ -3,7 +3,7 @@ name: React Build and Deploy to Docker Hub
 on:
   push:
     branches:
-      - deployment
+      - main
 
 jobs:
   build:
@@ -29,4 +29,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/frontendsecure:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/react-auth-app:latest
