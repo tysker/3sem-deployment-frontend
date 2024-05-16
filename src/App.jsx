@@ -14,7 +14,6 @@ import Register from "./pages/Register.jsx";
 function App() {
     const [isAuthenticated, setIsAuthenticated] = useState(false)
     const [user, setUser] = useState({isLoading: false, error: null, user: {username: "", roles: []}})
-    console.log(user)
 
     return (
         <BrowserRouter>
